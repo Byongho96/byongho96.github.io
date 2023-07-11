@@ -14,12 +14,24 @@ body {
 }
 
 .index__title {
-  background: -webkit-linear-gradient(#ffffff, #ffffff41);
+  background-image: linear-gradient(180deg, #ffffff 10%, #ffffff00 130%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   font-size: min(150px, 12vw);
   font-weight: 800;
   line-height: 150%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* animation: shine 6s linear infinite; */
+}
+
+@keyframes shine {
+  0% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: -400% 0;
+  }
 }
 
 .index__navbar__menu {
