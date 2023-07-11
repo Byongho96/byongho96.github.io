@@ -42,6 +42,7 @@ body {
   border-radius: 50%;
   background: radial-gradient(#ffffffa0, #ffffff00 70%);
   opacity: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .index__navbar__menu__item:hover::after {
@@ -51,11 +52,17 @@ body {
 .index__navbar__menu__item svg {
   width: min(30px, 5vw);
   height: min(30px, 5vw);
+  transition: transform 0.2s ease-in-out;
+}
+
+.index__navbar__menu__item:hover svg {
+  transform: scale(1.05);
 }
 
 .index__navbar__menu__item path {
   stroke: rgba(255, 255, 255, 0.527);
   fill: rgba(255, 255, 255, 0.527);
+  transition: stroke 0.2s ease-in-out, fill 0.2s ease-in-out;
 }
 
 .index__navbar__menu__item:hover path {
